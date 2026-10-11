@@ -3,7 +3,17 @@
 
 #include "ColourConstants.h" /* For White */
 #include "Flock.h"
+#include "Game3DObject.h" /* For Game3DObject */
+#include "PuzzleGame.h"   /* For PieceVillager */
 #include "Utils.h"
+
+#if defined(VERSION_BW1W100)
+#define ANIMAL_FILE "C:\\dev\\black\\Animal.cpp"
+#elif defined(VERSION_BW1W110)
+#define ANIMAL_FILE "C:\\dev\\Black\\Animal.cpp"
+#else
+#define ANIMAL_FILE "C:\\dev\\MP\\Black\\Animal.cpp"
+#endif
 
 void Animal::SetStateSpeed() {}
 
@@ -141,4 +151,40 @@ uint32_t Animal::DecideAnimation()
 DEATH_REASON Animal::GetDeathReason()
 {
 	return (DEATH_REASON)DeathReason;
+}
+
+PieceVillager* PieceVillager::Create(const MapCoords& coords, const GAnimalInfo* info, unsigned long param_3)
+{
+	PieceVillager* villager = new (ANIMAL_FILE, 2696) PieceVillager(coords, info, param_3);
+	if (villager != NULL)
+	{
+		villager->CallVirtualFunctionsForCreation(coords);
+		villager->Game3dObject->SetHumanShadowed(1);
+	}
+	return villager;
+}
+
+uint32_t PieceVillager::ProcessNeeds()
+{
+	return 0;
+}
+
+uint32_t PieceVillager::CheckNeeds()
+{
+	return 0;
+}
+
+uint32_t PieceVillager::GetSaveType()
+{
+	return GAME_THING_TYPE_PIECE_VILLAGER;
+}
+
+bool32_t PieceVillager::CanBeFrighteningToCreature(Creature* param_1)
+{
+	return false;
+}
+
+bool32_t PieceVillager::DecideWhatToDo()
+{
+	return true;
 }
