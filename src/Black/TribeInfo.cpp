@@ -3,6 +3,7 @@
 
 #include "MapCoords.h"
 #include "Utils.h"
+#include <string> /* For the std::basic_string instantiations */
 
 char* GTribeInfo::TribeTextArray[TRIBE_TYPE_LAST + 1] = {
 	"CELTIC", "AFRICAN", "AZTEC", "JAPANESE", "INDIAN", "EGYPTIAN", "GREEK", "NORSE", "TIBETAN", "LAST_ERROR",
