@@ -8,6 +8,7 @@
 #include "MPFEStartGameTransferFilesMessage.h" /* For MPFEStartGameTransferFilesMessage */
 #include "MPFEStopGameStartMessage.h"          /* For MPFEStopGameStartMessage */
 #include <string>                              /* For the std::basic_string instantiations */
+#include "ColourConstants.h"                   /* For White */
 
 #if defined(VERSION_BW1W100)
 #define MPFE_GAME_START_MESSAGES_FILE "C:\\dev\\black\\MPFEGameStartMessages.cpp"

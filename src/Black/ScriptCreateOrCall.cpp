@@ -1,6 +1,8 @@
+#include "GameTimeConstants.h"
 #include "Script.h"
 #include "Balance.h"
-#include <string> /* For the std::basic_string instantiations */
+#include <string>            /* For the std::basic_string instantiations */
+#include "ColourConstants.h" /* For White */
 
 GBaseInfo* GScriptOpposingCreature::GetBaseInfo(uint32_t& info_count)
 {

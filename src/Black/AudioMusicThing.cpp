@@ -9,6 +9,7 @@
 #include "GameThingWithPos.h" /* For class GameThingWithPos */
 #include "Landscape.h"
 #include "ThingMusicInfo.h"
+#include "ColourConstants.h" /* For White */
 
 uint32_t ThingMusicInfo::GetSaveType()
 {

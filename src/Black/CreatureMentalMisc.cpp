@@ -1,8 +1,10 @@
+#include "GameTimeConstants.h"
 #include "MultiMapFixed.h"
 #include "CreatureMentalLearnAction.h"
-#include "Creature.h" /* For Creature */
-#include "Abode.h"    /* For Abode */
-#include "Town.h"     /* For Town */
+#include "Creature.h"        /* For Creature */
+#include "Abode.h"           /* For Abode */
+#include "Town.h"            /* For Town */
+#include "ColourConstants.h" /* For White */
 
 bool32_t MultiMapFixed::IsBuildingWhichIsBeingBuilt(Creature* creature)
 {

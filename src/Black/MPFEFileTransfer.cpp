@@ -7,6 +7,7 @@
 
 #include "MPFEFileTransferMessage.h" /* For MPFEFileTransferMessage */
 #include <string>                    /* For the std::basic_string instantiations */
+#include "ColourConstants.h"         /* For White */
 
 #if defined(VERSION_BW1W100)
 #define MPFE_FILE_TRANSFER_FILE "C:\\dev\\black\\MPFEFileTransfer.cpp"

@@ -1,3 +1,4 @@
+#include "GameTimeConstants.h"
 #include "MPFEMessageObject.h"
 
 #include <stdio.h> /* For swprintf */
@@ -10,6 +11,7 @@
 #include "MPFEKickMessageRequest.h" /* For MPFEKickMessageRequest */
 #include "MPFEPlayerDetails.h"      /* For MPFEPlayerDetails */
 #include <string>                   /* For the std::basic_string instantiations */
+#include "ColourConstants.h"        /* For White */
 
 #if defined(VERSION_BW1W100)
 #define MPFE_CHANNEL_MESSAGES_FILE "C:\\dev\\black\\MPFEChannelMessages.cpp"

@@ -1,4 +1,5 @@
 #include "PSysProperties.h"
+#include "ColourConstants.h" /* For White */
 
 uint32_t UR_Lightning_CollectionData::GetSaveType()
 {

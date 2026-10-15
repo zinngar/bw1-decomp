@@ -1,5 +1,6 @@
 #include "FireEffect.h"
-#include <string> /* For the std::basic_string instantiations */
+#include <string>            /* For the std::basic_string instantiations */
+#include "ColourConstants.h" /* For White */
 
 uint32_t FireEffect::GetSaveType()
 {
