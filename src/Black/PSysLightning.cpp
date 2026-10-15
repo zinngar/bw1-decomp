@@ -1,3 +1,4 @@
+#include "GameTimeConstants.h"
 #include "PSysProperties.h"
 #include "ColourConstants.h" /* For White */
 

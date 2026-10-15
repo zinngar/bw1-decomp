@@ -1,3 +1,4 @@
+#include "GameTimeConstants.h"
 #include "Weather.h"
 #include "ClimateInfo.h"
 #include "WeatherInfo.h"

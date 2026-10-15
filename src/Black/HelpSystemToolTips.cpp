@@ -1,3 +1,4 @@
+#include "GameTimeConstants.h"
 #include "ToolTipsInfo.h"
 
 GToolTipsInfo GToolTipsInfo::Infos[TOOLTIPS_TYPE_LAST];
